@@ -1,8 +1,8 @@
 puppeteer = require("puppeteer");
 
 async function capturl(url, options) {
-  let width = options.width || 1920;
-  let height = options.height || 1080;
+  let width = parseInt(options.width) || 1920;
+  let height = parseInt(options.height) || 1080;
 
   const browser = await puppeteer.launch({
     args: [

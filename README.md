@@ -35,6 +35,22 @@ let image = await capturl("https://www.google.com", {
 });
 ```
 
+Or you can use it in your API if you need the result like:
+[hostname]:[3000]/api/screenshot?**url=https://www.google.com**&**width=1080**&**height=1080**&**encoding=png**
+
+```js
+app.get("/api/screenshot", async (req, res) => {
+  let image = await capturl(req.query.url, {
+    width: req.query.width,
+    height: req.query.height,
+    encoding: req.query.encoding,
+  });
+
+  res.set("Content-Type", "image/png");
+  res.send(image);
+});
+```
+
 ## Credits
 
 [GoogleChrome/puppeteer](https://github.com/puppeteer/puppeteer)

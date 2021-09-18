@@ -1,6 +1,6 @@
 {
   "name": "capturl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small utility to get a screenshot of a website by providing the URL",
   "main": "index.js",
   "homepage": "https://github.com/OmarMokhfi/capturl",
