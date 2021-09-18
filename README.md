@@ -36,7 +36,7 @@ let image = await capturl("https://www.google.com", {
 ```
 
 Or you can use it in your API if you need the result like:\
-[hostname]:[3000]/api/screenshot?url=https://www.google.com&width=1080&height=1080&encoding=png
+[hostname]:[port]/api/screenshot?url=`https://www.google.com`&width=1080&height=1080&encoding=png
 
 ```js
 app.get("/api/screenshot", async (req, res) => {
