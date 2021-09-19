@@ -1,6 +1,7 @@
 # Capturl - Screenshot from url
 
-Capturl is an npm package that returns a PNG or BASE64 image of any website by providing the url. It was created using Google's puppeteer.
+Capturl is an npm package that returns a PNG or BASE64 image of any website by providing the url. It was created using Google's puppeteer.\
+Check the [demo](https://capturl.netlify.app/)
 
 ## Installation
 
@@ -50,6 +51,11 @@ app.get("/api/screenshot", async (req, res) => {
   res.send(image);
 });
 ```
+
+## API
+
+you can use the api directly:\
+https://capturl-api.herokuapp.com/api/screenshot?url=https://www.google.com&width=1920&encoding=png
 
 ## Credits
 
